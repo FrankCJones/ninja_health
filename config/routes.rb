@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   resources :todos
-  #root "pages#home"
-  root 'todos#index'
+  root "pages#home"
+  #root 'todos#index'
+  get 'choose' => 'pages#choose'
+  get 'help' => 'pages#help'
+  get 'home' => 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
